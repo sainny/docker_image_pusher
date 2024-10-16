@@ -1,2 +1,2 @@
 zlzk_ljx
-nvidia/cuda:11.3.1-base-rockylinux8
+nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04
