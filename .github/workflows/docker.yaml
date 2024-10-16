@@ -20,10 +20,10 @@ jobs:
         run: docker pull nvidia/cuda:11.3.1-devel-ubuntu20.04
 
       - name: Tag Docker image for Aliyun
-        run: docker tag nvidia/cuda:11.3.1-devel-ubuntu20.04 registry.cn-guangzhou.aliyuncs.com/liujx3/zlzk_ljx:latest
+        run: docker tag nvidia/cuda:11.3.1-devel-ubuntu20.04 registry.cn-guangzhou.aliyuncs.com/liujx3/jszn-ljx:latest
 
       - name: Log in to Aliyun Docker Registry
         run: echo "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}" | docker login -u "${{ secrets.ALIYUN_REGISTRY_USER }}" registry.cn-hangzhou.aliyuncs.com --password-stdin
 
       - name: Push Docker image to Aliyun
-        run: docker push registry.cn-guangzhou.aliyuncs.com/liujx3/zlzk_ljx:latest
+        run: docker push registry.cn-guangzhou.aliyuncs.com/liujx3/jszn-ljx:latest
