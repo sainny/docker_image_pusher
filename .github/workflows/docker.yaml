@@ -17,7 +17,7 @@ jobs:
         run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
       - name: Pull Docker image from Docker Hub
-        run: docker pull nvidia/cuda:11.3.1-devel-ubuntu20.04
+        run: docker pull leezhao/yolov6_env:v2.0
 
       - name: Tag Docker image for Aliyun
         run: docker tag leezhao/yolov6_env:v2.0 crpi-6u9pmxua8h32w1z3.cn-guangzhou.personal.cr.aliyuncs.com/ubunut22_04/nvidia_cuda:v1.0
