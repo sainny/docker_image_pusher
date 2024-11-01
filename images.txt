@@ -1,2 +1,2 @@
-zlzk_ljx
-nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04
+nvidia_cuda
+docker pull leezhao/yolov6_env:v2.0
