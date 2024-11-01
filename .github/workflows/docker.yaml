@@ -23,7 +23,7 @@ jobs:
         run: docker tag leezhao/yolov6_env:v2.0 crpi-6u9pmxua8h32w1z3.cn-guangzhou.personal.cr.aliyuncs.com/ubunut22_04/nvidia_cuda:v1.0
 
       - name: Log in to Aliyun Docker Registry
-        run: echo "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}" | docker login -u "${{ secrets.ALIYUN_REGISTRY_USER }}" registry.cn-guangzhou.aliyuncs.com --password-stdin
+        run: echo "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}" | docker login -u "${{ secrets.ALIYUN_REGISTRY_USER }}" crpi-6u9pmxua8h32w1z3.cn-guangzhou.personal.cr.aliyuncs.com --password-stdin
 
       - name: Push Docker image to Aliyun
         run: docker push crpi-6u9pmxua8h32w1z3.cn-guangzhou.personal.cr.aliyuncs.com/ubunut22_04/nvidia_cuda:v1.0
